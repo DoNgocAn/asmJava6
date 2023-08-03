@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/css/info-user.css">
+</head>
+<body>
+	<div id="header" th:replace="@{user/menu}"></div>
+	<div class="content">
+		<div class="heading">Thông Tin Khách Hàng</div>
+		<form action>
+			<div class="mb-3">
+				<label for="fullname">Chủ Tài Khoản:</label> <input type="text" name
+					id="fullname" placeholder>
+			</div>
+			<div class="mb-3">
+				<label for="security">CCCD/CMND:</label> <input type="text" name
+					id="security" placeholder>
+			</div>
+			<div class="mb-3">
+				<label>Giới Tính:</label><input type="radio" name="gender" id="male"><label
+					for="male">Nam</label><input type="radio" name="gender" id="female"><label
+					for="female">Nữ</label>
+			</div>
+			<div class="mb-3">
+				<label for="phone">Số Điện Thoại:</label> <input type="text" name
+					id="phone" placeholder>
+			</div>
+			<div class="mb-3">
+				<label for="address">Địa Chỉ Thường Trú:</label> <input type="text"
+					name id="" address"" placeholder>
+			</div>
+		</form>
+	</div>
+	<div id="footer" th:replace="@{user/footer}"></div>
+</body>
+</html>
