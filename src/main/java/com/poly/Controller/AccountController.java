@@ -43,6 +43,7 @@ public class AccountController {
 		String repassword= request.getParameter("repassword");
 		if (!ac.getPassword().equals(repassword)) {
 			model.addAttribute("message", "Xác thực mật khẩu không đúng ");
+			String ac;
 			return "user/sign-up";
 		} else {
 			try {
